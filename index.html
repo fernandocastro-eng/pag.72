@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ediciones Fares</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+    <header>
+        <h1>Ediciones Fares</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h2>Formulario de registro</h2>
+        
+        <form action="recepcion.php" method="POST">
+            
+            <div class="row">
+                <label>Nombres:</label>
+                <input type="text" id="nombres" name="nombres" class="form-control">
+            </div>
+
+            <div class="row">
+                <label>Apellidos:</label>
+                <input type="text" id="apellidos" name="apellidos" class="form-control">
+            </div>
+
+            <div class="row">
+                <label>Email:</label>
+                <input type="email" id="email" name="email" class="form-control">
+            </div>
+
+            <div class="row">
+                <label>Género:</label><br>
+                <input type="radio" name="genero" value="M"> Masculino
+                <input type="radio" name="genero" value="F"> Femenino
+            </div>
+
+            <div class="row">
+                <label>Libros de mi interés:</label><br>
+                <input type="checkbox" name="libros[]" value="Ficción"> Libros de Ficción <br>
+                <input type="checkbox" name="libros[]" value="Técnicos"> Libros Técnicos <br>
+                <input type="checkbox" name="libros[]" value="Historia"> Libros de Historia <br>
+                <input type="checkbox" name="libros[]" value="Cocina"> Libros de Cocina
+            </div>
+
+            <div class="row">
+                <input type="submit" value="Enviar datos" class="btn">
+            </div>
+
+        </form>
+    </div>
+
+    <footer>
+        <p>Derechos Reservados &copy; 2026 - Ediciones Fares</p>
+    </footer>
+
+</body>
+</html>
